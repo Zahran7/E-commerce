@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="Logo d-lg-none">
+    <div class="logo-container">
+      <img src="img/asset 0.svg" alt="" />
+    </div>
+  </div>
+
+  <div class="header d-sm-none d-lg-flex">`
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand d-none d-lg-flex" href="#">
+            <img src="img/asset 0.svg" alt="" />
+          </a>
+          >
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="games.html"
+                  >Games</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="aboutus.html"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactus.html"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+
+            <div class="icons d-none d-lg-flex ms-auto">
+              <div class="icon insta"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icon youtube"><i class="fa-brands fa-youtube"></i></div>
+              <div class="icon tiktok"><i class="fa-brands fa-tiktok"></i></div>
+              <div class="icon discord"><i class="fa-brands fa-discord"></i></div>
+            </div>
+
+            <form class="d-flex sm-w-100 search-nav ms-auto" role="search">
+              <div class="input-container" onclick="openModal()">
+                <div class="icon"><i class="fas fa-search"></i></div>
+                <input type="text" placeholder="Search for products" />
+              </div>
+            </form>
+
+            <div class="nav-icons d-none d-lg-flex">
+              <div class="icon"><a href="login.html"><i class="fa-regular fa-user"></i></a></div>
+              <div class="icon"><a href="wish.html"><i class="fa-regular fa-heart"></i></a></div>
+              <div class="icon"><a href="cart.html"><i class="fa-regular fa-cart-shopping"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <div class="header2 d-sm-flex d-lg-none">
+    <a
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      role="button"
+      aria-controls="offcanvasExample"
+    >
+      <div class="toggl"><i class="fa-solid fa-bars"></i></div>
+    </a>
+
+    <div class="d-flex sm-w-100 search-nav ms-auto" role="search">
+      <div class="input-container" onclick="openModal()">
+        <div class="icon"><i class="fas fa-search"></i></div>
+        <input type="text" placeholder="Search for products" />
+      </div>
+    </div>
+
+    <div class="toggle2"><i class="fa-regular fa-cart-shopping"></i></div>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+  <div class="sidebar">
+    <div class="menu-bar">
+        <div class="menu-item cat" id="categories">
+            <span>Categories</span>
+        </div>
+        <div class="menu-item men" id="menu">
+            <span>Menu</span>
+        </div>
+    </div>
+    <div class="submenu" id="categories-submenu">
+        <ul>
+            <li><a href="">Adventure</a></li>
+            <li><a href="">Casual</a></li>
+            <li><a href="">Horror</a></li>
+            <li><a href="">Indie</a></li>
+            <li><a href="">Racing</a></li>
+            <li><a href="">RPG</a></li>
+            <li><a href="">Simulation</a></li>
+          
+        </ul>
+    </div>
+    <div class="submenu" id="menu-submenu">
+        <ul>
+          <li><a href="">Demos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="">Sale</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="wish.html"><span><i class="fa-light fa-heart"></i></span>Wishlist</a></li>
+            <li><a href="login.html"> <span><i class="fa-light fa-user"></i></span>Login / Register</a></li>
+        </ul>
+    </div>
+</div>
+
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="container">
+        <div class="serch">
+          <div class="input-container">
+            <div class="icon"><i class="fas fa-search"></i></div>
+            <input type="text" placeholder="Search for products" />
+          </div>
+        </div>
+      </div>
+      <section class="games-cards">
+        <div class="container-home">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="discount">
+                <div class="discount-title1">
+                  
+                  <h4>New Releases
+                  </h4>
+                  
+                </div>
+                <div class="discount-items">
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 50.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span>
+                      <div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 51.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 52.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="discount">
+                <div class="discount-title1">
+                  
+                  <h4>
+                    Upcoming
+                  </h4>
+                  
+                </div>
+                <div class="discount-items">
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 55.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 56.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 57.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="discount">
+                <div class="discount-title1">
+                  
+                  <h4>PlayStation 5
+  
+                  </h4>
+                  
+                </div>
+                <div class="discount-items">
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 60.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 61.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 62.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="discount">
+                <div class="discount-title1">
+                  
+                  <h4>Nintendo Switch
+                  </h4>
+                  
+                </div>
+                <div class="discount-items">
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 65.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 66.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item d-flex">
+                    <div class="img">
+                      <img src="img/asset 67.jpeg" alt="">
+                    </div>
+                    <div class="item-title d-flex">
+                      <a href="">Tiny Tina’s Wonderlands</a>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      <span><i class="fa-solid fa-star"></i>
+                      </span><div class="price">
+                        <span class="line">£80.99</span><span>£69.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+      <section class="wish">
+        <div class="wishlist-container">
+            <div class="wishlist-icon"><i class="fa-light fa-cart-shopping"></i></div> <!-- رمز القلب -->
+            <h1>No products in the cart.</h1>
+            <a href="games.html" class="shop-button">Return To Shop</a>
+        </div>
+      </section>
+      <div class="icons-end d-lg-none d-md-flex">
+        <div class="container-home">
+          <div class="row">
+            <div class="col-3">
+              <a href="games.html"><div class="icon">
+                
+                <i class="fa-light fa-shop"></i>
+                <span>shop</span>
+            </div></a>
+              
+            </div>
+            <div class="col-3">
+              <a href="wish.html"><div class="icon">
+                <i class="fa-light fa-heart"></i>
+                <span>
+                  Wishlist</span>
+            </div></a>
+              
+            </div>
+            <div class="col-3">
+              <a href="cart.html"><div class="icon">
+                <i class="fa-regular fa-cart-shopping"></i>
+                <span>
+                  Cart</span>
+            </div></a>
+              
+            </div>
+            <div class="col-3">
+              <a class="no" href="login.html"><div class="icon">
+                <i class="fa-regular fa-user"></i>
+                <span>
+                  My Account</span>
+            </div></a>
+              
+            </div>
+          </div>
+            
+            
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer1">
+          <div class="container-home">
+            <div class="row row2">
+              <div class="col-lg-6 col-sm-12">
+                <div class="item-footer">
+                  <div class="footer-img">
+                    <p>Payment Methods:</p>
+                    
+                  <div class="img">
+                    <img src="img/asset 75.png" alt="">
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="item-footer">
+                  <div class="pay">
+                    <img src="img/asset 76.svg" alt="">
+                    <a href="">United States (English) / USD</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer2">
+          <div class="container-home">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="item-f">
+                <div class="img">
+                  <img src="img/asset 0.svg" alt="" />
+                </div>
+                <p>The online store of equipment and electronics is one of the leading online stores. The band was released in 25 volumes</p>
+              </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="item-f">
+                  <h4>Useful Links</h4>
+                <div class="links">
+                  <a href="">about us</a>
+                  <a href="">contact us</a>
+                  <a href="">sale</a>
+                  <a href="">blog</a>
+                  <a href="">FAQs</a>
+                </div>
+                
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="item-f">
+                  <h4>Games</h4>
+                <div class="links">
+                  <a href="">PC</a>
+                  <a href="">PlayStation 5</a>
+                  <a href="">Xbox Series X|S</a>
+                  <a href="">Nintendo Switch</a>
+            
+                </div>
+                
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="item-f">
+                  <h4>Social Links</h4>
+                <div class="links">
+                  <a href="">Instagram</a>
+                  <a href="">Twiter</a>
+                  <a href="">YouTube</a>
+                  
+                </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer3">
+          <div class="container-home">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="item-f3">
+                  <p>Based on <span class="bld">WoodMart</span> theme 2024 <span class="bld">WoodMartWooCommerce Themes.</span></p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="item-f3 f3">
+                  <a href="">Terms Of Service</a>
+                  <a href="">Privacy Policy</a>
+                  <a href="">Store Refund Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
